@@ -12,50 +12,47 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #fff3e0;
-      color: #5a1f0f;
+      background: url('tapestry.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff3e0;
       line-height: 1.6;
-    }
-
-    .header-wrapper {
       position: relative;
-      background-color: #fdebd0;
-      text-align: center;
-      padding: 160px 20px 60px;
-      overflow: hidden;
     }
 
-    .header-wrapper svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      width: 500px;
-      height: 500px;
-      transform: translate(-50%, -50%);
-      opacity: 0.2;
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
       z-index: 0;
-      pointer-events: none;
     }
 
-    .header-content {
+    .content {
       position: relative;
       z-index: 1;
     }
 
-    .header-content h1 {
+    header {
+      text-align: center;
+      padding: 140px 20px 60px;
+    }
+
+    header h1 {
       font-family: 'Great Vibes', cursive;
-      font-size: 3.5em;
-      color: #c62828;
+      font-size: 4em;
+      color: #ffccbc;
       margin-bottom: 10px;
     }
 
-    .header-content p {
-      font-size: 1.2em;
-      color: #8e2800;
+    header p {
+      font-size: 1.4em;
+      color: #ffe0b2;
     }
 
     nav {
-      background-color: #b71c1c;
+      background-color: rgba(183, 28, 28, 0.85);
       text-align: center;
       padding: 12px 0;
     }
@@ -74,88 +71,73 @@
     section {
       max-width: 800px;
       margin: 50px auto;
-      padding: 25px;
-      background-color: rgba(255, 250, 240, 0.94);
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
       border-radius: 10px;
     }
 
     h2 {
-      color: #b71c1c;
+      color: #ffcdd2;
       font-family: 'Great Vibes', cursive;
-      font-size: 2em;
+      font-size: 2.2em;
       border-bottom: 2px solid #e57373;
       padding-bottom: 5px;
       margin-bottom: 15px;
+    }
+
+    p {
+      color: #fbe9e7;
     }
 
     footer {
       text-align: center;
       padding: 30px 10px;
       font-size: 0.9em;
-      background-color: rgba(251, 233, 231, 0.85);
-      color: #6d4c41;
+      color: #ffccbc;
     }
 
     a {
-      color: #b71c1c;
+      color: #ffab91;
     }
   </style>
 </head>
 <body>
-
-  <div class="header-wrapper">
-    <!-- Inline Mandala SVG -->
-    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="256" cy="256" r="250" stroke="#c62828" stroke-width="10" fill="none" />
-      <circle cx="256" cy="256" r="200" stroke="#e57373" stroke-width="5" fill="none" />
-      <g stroke="#b71c1c" stroke-width="2" fill="none">
-        <path d="M256,6 L256,506" />
-        <path d="M6,256 L506,256" />
-        <path d="M75,75 L437,437" />
-        <path d="M437,75 L75,437" />
-        <path d="M156,6 L356,506" />
-        <path d="M356,6 L156,506" />
-        <path d="M6,156 L506,356" />
-        <path d="M6,356 L506,156" />
-      </g>
-    </svg>
-
-    <div class="header-content">
+  <div class="content">
+    <header>
       <h1>Amoura</h1>
       <p>A sacred community of connection, body, and spirit</p>
-    </div>
+    </header>
+
+    <nav>
+      <a href="#vision">Vision</a>
+      <a href="#principles">Principles</a>
+      <a href="#join">Join</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="vision">
+      <h2>Our Vision</h2>
+      <p>Amoura is a sanctuary for love, touch, and trust. We value presence, truth, and openness. We hold space for healing, community, and the sacredness of body and earth.</p>
+    </section>
+
+    <section id="principles">
+      <h2>Core Principles</h2>
+      <p>We live by the values of radical honesty, consensual intimacy, naturism, and polyfidelity. We celebrate diversity of experience, deep connection, and the cycles of nature.</p>
+    </section>
+
+    <section id="join">
+      <h2>Join Our Circle</h2>
+      <p>If you're called to co-create a home rooted in warmth, sensuality, and spirit, Amoura welcomes you. We invite aligned individuals and families to connect with us.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email us at <a href="mailto:amoura@protonmail.com">amoura@protonmail.com</a></p>
+    </section>
+
+    <footer>
+      &copy; 2025 Amoura Community. All rights reserved.
+    </footer>
   </div>
-
-  <nav>
-    <a href="#vision">Vision</a>
-    <a href="#principles">Principles</a>
-    <a href="#join">Join</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="vision">
-    <h2>Our Vision</h2>
-    <p>Amoura is a sanctuary for love, touch, and trust. We value presence, truth, and openness. We hold space for healing, community, and the sacredness of body and earth.</p>
-  </section>
-
-  <section id="principles">
-    <h2>Core Principles</h2>
-    <p>We live by the values of radical honesty, consensual intimacy, naturism, and polyfidelity. We celebrate diversity of experience, deep connection, and the cycles of nature.</p>
-  </section>
-
-  <section id="join">
-    <h2>Join Our Circle</h2>
-    <p>If you're called to co-create a home rooted in warmth, sensuality, and spirit, Amoura welcomes you. We invite aligned individuals and families to connect with us.</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email us at <a href="mailto:amoura@protonmail.com">amoura@protonmail.com</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Amoura Community. All rights reserved.
-  </footer>
-
 </body>
 </html>
