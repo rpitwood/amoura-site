@@ -17,42 +17,41 @@
       line-height: 1.6;
     }
 
-    header {
-      text-align: center;
-      padding: 100px 20px 40px;
-      background-color: rgba(255, 245, 235, 0.95);
+    .header-wrapper {
       position: relative;
+      background-color: #fdebd0;
+      text-align: center;
+      padding: 160px 20px 60px;
       overflow: hidden;
     }
 
-    header::before {
-      content: "";
-      background: url('https://upload.wikimedia.org/wikipedia/commons/3/3c/Mandala.svg') no-repeat center center;
-      background-size: 300px;
-      opacity: 0.12;
+    .header-wrapper svg {
       position: absolute;
-      top: 10px;
+      top: 50%;
       left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 100%;
+      width: 500px;
+      height: 500px;
+      transform: translate(-50%, -50%);
+      opacity: 0.2;
       z-index: 0;
+      pointer-events: none;
     }
 
-    header h1 {
+    .header-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .header-content h1 {
       font-family: 'Great Vibes', cursive;
       font-size: 3.5em;
       color: #c62828;
       margin-bottom: 10px;
-      position: relative;
-      z-index: 1;
     }
 
-    header p {
+    .header-content p {
       font-size: 1.2em;
       color: #8e2800;
-      position: relative;
-      z-index: 1;
     }
 
     nav {
@@ -103,10 +102,29 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Amoura</h1>
-    <p>A sacred community of connection, body, and spirit</p>
-  </header>
+
+  <div class="header-wrapper">
+    <!-- Inline Mandala SVG -->
+    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="256" cy="256" r="250" stroke="#c62828" stroke-width="10" fill="none" />
+      <circle cx="256" cy="256" r="200" stroke="#e57373" stroke-width="5" fill="none" />
+      <g stroke="#b71c1c" stroke-width="2" fill="none">
+        <path d="M256,6 L256,506" />
+        <path d="M6,256 L506,256" />
+        <path d="M75,75 L437,437" />
+        <path d="M437,75 L75,437" />
+        <path d="M156,6 L356,506" />
+        <path d="M356,6 L156,506" />
+        <path d="M6,156 L506,356" />
+        <path d="M6,356 L506,156" />
+      </g>
+    </svg>
+
+    <div class="header-content">
+      <h1>Amoura</h1>
+      <p>A sacred community of connection, body, and spirit</p>
+    </div>
+  </div>
 
   <nav>
     <a href="#vision">Vision</a>
@@ -138,5 +156,6 @@
   <footer>
     &copy; 2025 Amoura Community. All rights reserved.
   </footer>
+
 </body>
 </html>
