@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Amoura</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: url('tapestry.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff3e0;
+      line-height: 1.6;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      text-align: center;
+      padding: 120px 20px 60px;
+    }
+
+    header h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4em;
+      color: #ffccbc;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #ffe0b2;
+    }
+
+    nav {
+      background-color: rgba(183, 28, 28, 0.85);
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: #fff8e1;
+      text-decoration: none;
+      margin: 0 18px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ffcdd2;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.2em;
+      border-bottom: 2px solid #e57373;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #fbe9e7;
+      margin-bottom: 1.4em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9em;
+      color: #ffccbc;
+    }
+
+    a {
+      color: #ffab91;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <header>
+      <h1>About Amoura</h1>
+      <p>Our values, our practices, our vision</p>
+    </header>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+
+    <section>
+      <h2>What Amoura Is</h2>
+      <p>Amoura is a sacred and intentional community rooted in love, touch, presence, and truth. It is not a retreat, nor a business, nor a movement — it is a lived space where human beings honour connection with themselves, each other, and the earth.</p>
+    </section>
+
+    <section>
+      <h2>Body, Touch, and Trust</h2>
+      <p>We believe the body is sacred. Touch, when given and received with awareness, is a pathway to healing and connection. In our space, physical closeness is welcomed, not hidden — and we cultivate trust through consent, clarity, and slow invitation.</p>
+    </section>
+
+    <section>
+      <h2>Intimacy and Consent</h2>
+      <p>Consent is not just permission — it is presence. At Amoura, we honour boundaries as sacred and changeable. We practice open communication, body awareness, and trust-building, creating a safe ground for honest intimacy to emerge without pressure or shame.</p>
+    </section>
+
+    <section>
+      <h2>Spiritual Practice</h2>
+      <p>Our rituals are simple, elemental, and embodied. We honour the sun, the earth, the water, the breath. We move, sing, cook, sit in circle, bathe, and rest — not as performance, but as devotion to life itself.</p>
+    </section>
+
+    <section>
+      <h2>Living Together</h2>
+      <p>Amoura is not a place you visit for a weekend — it is a rhythm. We cook together, clean together, garden together, build spaces for stillness and celebration. Our community values transparency, co-creation, and interdependence.</p>
+    </section>
+
+    <footer>
+      &copy; 2025 Amoura Community. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
